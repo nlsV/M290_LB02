@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="style/style.css" />
+        <title>Form Validator</title>
+    </head>
+    <body>
+        <section>
+            <header>
+                <h2><a href="index.html" class="logo">Modul 290</a></h2>
+                <div class="navigation">
+                    <a href="index.html">Home</a>
+                    <a href="formular.html">Anmelden</a>
+                </div>
+            </header>
+            <div class="content">
+                <form id="form" class="form">
+                    <div id="title">
+                        <h2>Melden Sie sich jetzt an!</h2>
+                        <h1>Und Sie erhalten Rabatt auf unser Angebot.</h1>
+                    </div>
+                    <div class="form-control">
+                        <label for="firstName">Vorname</label>
+                        <input type="text" id="firstName" placeholder="Vornamen angeben" />
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="lastName">Nachname</label>
+                        <input type="text" id="lastName" placeholder="Nachnamen angeben" />
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" placeholder="Username angeben" />
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="email">E-Mail</label>
+                        <input type="text" id="email" placeholder="E-Mail angeben" />
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="telefon">Telefonnummer (CH)</label>
+                        <input type="text" id="telefon" placeholder="Nummer angeben" />
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="password">Passwort</label>
+                        <input type="password" id="password" placeholder="Passwort angeben" />
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="password2">Passwort bestätigen</label>
+                        <input type="password" id="password2" placeholder="Passwort bestätigen" />
+                        <small>Error message</small>
+                    </div>
+                    <div id="newsletter">
+                        <input type="checkbox">    Ich möchte Neuigkeiten erhalten.<br>
+                    </div>
+                    <button type="submit">Anmelden</button>
+                </form>
+            </div>
+        </section>
+        <script src="script/validate-inputs.js"></script>
+    </body>
+</html>
